@@ -1,0 +1,62 @@
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+  
+body 
+  height: 100vh     
+  background-image: url(imgs/searchBackground.jpg)
+  background-size: cover
+
+#searchContainer
+  height: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr
+ 
+  #capsule
+    grid-column-start: 3
+    grid-column-end: 4
+    // across >
+    grid-row-start: 5
+    grid-row-end: 6
+    // down v
+    justify-self: center 
+    // across
+    align-self: top
+    // down v
+    margin-top: 12px
+    border-radius: 40px
+    height: 40px
+    font-weight: bold
+    color: #012454
+    padding: 0px 10px
+    font-size: 16px
+    text-decoration: none
+
+  #searchBar
+    height: 37px
+    grid-column-start: 2
+    grid-column-end: 5
+    // across >
+    grid-row-start: 4
+    grid-row-end: 5
+    // down v
+    border: 2px solid gray
+    border-radius: 40px
+    outline: none
+    padding: 0 25px 
+    font-size: 18px
+    align-self: end
+    // down v
+
+  #sideBar
+    width: 70%
+    justify-self: center
+    //border: 2px solid white
+    grid-column-start: 5
+    grid-column-end: 6
+    grid-row-start: 1
+    grid-row-end: 5
+
